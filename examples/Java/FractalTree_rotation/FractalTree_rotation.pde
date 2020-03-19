@@ -1,5 +1,5 @@
 /**
- * FractalTree - Using rotation
+ * FractalTree -- Using rotation
  * https://rosettacode.org/wiki/Fractal_tree#Processing
  * Processing 3.4
  * 2020-03-18 Alexandre Villares
