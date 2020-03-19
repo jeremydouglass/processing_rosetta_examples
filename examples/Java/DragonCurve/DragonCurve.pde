@@ -12,8 +12,8 @@
  * 
  * (You may either display the curve directly or write it to an image file.)
  *
- * For some brief notes the algorithms used and how they might suit various languages,
- * see the Rosetta Code task page.
+ * For some brief notes on the algorithms used and how they might suit various
+ * languages, see the Rosetta Code task page.
  */
 
 float l = 3;

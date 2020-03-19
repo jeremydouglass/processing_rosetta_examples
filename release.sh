@@ -22,10 +22,12 @@ rm -r $ZIPD
 # In order to release
 # 
 # 1. check out a clean master (with no pending files)
-# 2. update the version number in examples.properties
-# 3. run the release script in the repo root -- this generates release files 
-# 4. on gihub, create a new release tagged with the version, e.g. v0.4
-# 5. add two release/ assets as attachments to the GitHub release:
+# 2. update the version number and pretty version in examples.properties
+# 3. commit and push that change to master e.g. "release 0.4" (pretty version)
+# 4. run the release script in the repo root -- this generates release files 
+# 5. on gihub, create a new release tagged with the version, e.g. v0.4
+#    using the "release" commit on master created in step 3.
+# 6. add two release/ assets as attachments to the GitHub release:
 #    -  rosetta_examples_p5.txt
 #    -  rosetta_examples_p5.zip
 # 

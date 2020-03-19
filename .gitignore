@@ -7,6 +7,12 @@ application.linux64
 application.windows32
 application.windows64
 application.macosx
+
+# ignore working area for drafts
 examples_draft
 
+# ignore release assets
 release/*
+
+# ommit Python mode optional metadata files
+sketch.properties
