@@ -17,7 +17,7 @@ must clearly change every second, and the change must cycle every so often
 (one minute, 30 seconds, etc.) It must be drawn; printing a string of
 numbers to your terminal doesn't qualify. Both text-based and graphical
 drawing are OK.
- *
+ 
 The clock is unlikely to be used to control space flights, so it needs not
 be hyper-accurate, but it should be usable, meaning if one can read the
 seconds off the clock, it must agree with the system clock.
@@ -26,7 +26,7 @@ the system timer every microsecond, use a proper timer/signal/event from your
 system or language instead. For a bad example, many OpenGL programs update
 the frame-buffer in a busy loop even if no redraw is needed, which is very
 undesirable for this task.
- *
+ 
 A clock is rarely (never?) a major application: try to keep your code simple
 and to the point. Don't write something too elaborate or convoluted, instead
 do whatever is natural, concise and clear in your language.
