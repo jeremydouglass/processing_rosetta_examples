@@ -66,6 +66,14 @@ void drawClock() {
 // The sketch redraws at Processing's default 60fps. To redraw the screen only
 // when the second hand changes, add a global variable and change draw() as
 // follows:
-
+//
+//   int lastSec = second();
+//   void draw() {
+//     if (lastSec!=second()) {
+//       drawClock();
+//     lastSec=second();
+//     }
+//   }
+//
 // One of the official Processing language examples is a more graphically
 // detailed Clock example: https://processing.org/examples/clock.html

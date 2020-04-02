@@ -15,16 +15,13 @@ and there are many functions which generate it .
 # Click on an area to zoom in.
 # Choose areas with multiple colors for interesting zooming.
 
+i = di = dj = 0
+fn1, fn2, fn3 = random(20), random(20), random(20)
+f = 10
+    
 def setup():
-    global x, y, zr, zi, zr2, zi2, cr, ci, n
-    global zmx1, zmx2, zmy1, zmy2, f, di, dj
-    global fn1, fn2, fn3, re, gr, bl, xt, yt, i, j
+    global zmx1, zmx2, zmy1, zmy2
     size(500, 500)
-    i = di = dj = 0
-    f = 10
-    fn1 = random(20)
-    fn2 = random(20)
-    fn3 = random(20)
     zmx1 = int(width / 4)
     zmx2 = 2
     zmy1 = int(height / 4)
@@ -32,9 +29,7 @@ def setup():
 
 
 def draw():
-    global x, y, zr, zi, zr2, zi2, cr, ci, n
-    global zmx1, zmx2, zmy1, zmy2, f, di, dj
-    global fn1, fn2, fn3, re, gr, bl, xt, yt, i, j
+    global i
 
     if i <= width:
         i += 1
@@ -59,9 +54,8 @@ def draw():
 
 
 def mousePressed():
-    global x, y, zr, zi, zr2, zi2, cr, ci, n
-    global zmx1, zmx2, zmy1, zmy2, f, di, dj
-    global fn1, fn2, fn3, re, gr, bl, xt, yt, i, j
+    global zmx1, zmx2, zmy1, zmy2, di, dj
+    global i, j
     background(200)
     xt, yt = mouseX, mouseY
     di = di + xt - width / 2.

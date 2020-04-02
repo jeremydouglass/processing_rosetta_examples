@@ -15,13 +15,14 @@ Several options for contributing are listed below.
 
 To identify an existing Processing task already on the Rosetta Code wiki that is not yet part of this example set:
 
-1. on the Rosetta Code wiki, browse  [Processing tasks](https://rosettacode.org/wiki/Category:Processing). If you find a task that is not listed in this repos `examples` folder:
-2. create a new issue https://github.com/jeremydouglass/rosetta_examples_p5/issues named for that task
+1. on the Rosetta Code wiki, browse [Processing tasks](https://rosettacode.org/wiki/Category:Processing) or [Python mode tasks](https://rosettacode.org/wiki/Category:Processing_Python_mode). 
+   If you find a task that is not listed in this repos `examples` folder:
+2. [create a new issue](https://github.com/jeremydouglass/rosetta_examples_p5/issues) named for that task
 
 
 ### Contribute a new task to the Rosetta Code wiki
 
-1. on the Rosetta Code wiki, browse [Tasks not implemented in Processing](https://rosettacode.org/wiki/Reports:Tasks_not_implemented_in_Processing).
+1. on the Rosetta Code wiki, browse [Tasks not implemented in Processing](https://rosettacode.org/wiki/Reports:Tasks_not_implemented_in_Processing) or [Tasks not implemented in Python mode](https://rosettacode.org/wiki/Reports:Tasks_not_implemented_in_Processing_Python_mode).
 2. select a task to add
 3. edit that page (full page edit)
 4. add a Processing section -- alphabetically using header markup

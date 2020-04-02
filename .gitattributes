@@ -1,0 +1,6 @@
+examples/* -linguist-documentation
+
+## pyde recognized as Python, could also be configured:
+#
+# *.pyde linguist-detectable=true
+# *.pyde linguist-language=Processing
