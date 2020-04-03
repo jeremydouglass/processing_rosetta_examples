@@ -31,7 +31,7 @@ from __future__ import print_function
 def setup():
     for m in range(4):
         for n in range(7):
-            print("{} ".format(ackermann(m, n)), end = "")
+            print("{} ".format(ackermann(m, n)), end="")
         print()
     # print('finished')
 
