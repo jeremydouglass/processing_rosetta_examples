@@ -22,9 +22,10 @@ Arbitrary precision is preferred (since the function grows so quickly),
 but not required.
 """
 
-# Python is not very adequate for deep recursion
-# Even setting sys.setrecursionlimit(1000000000)
-# m = 4 produces 'maximum recursion depth exceeded'
+# Python is not very adequate for deep recursion, so
+# even setting sys.setrecursionlimit(1000000000) if
+# m = 5 it throws 'maximum recursion depth exceeded'
+
 from __future__ import print_function
 
 def setup():
