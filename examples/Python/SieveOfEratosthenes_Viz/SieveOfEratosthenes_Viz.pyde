@@ -57,7 +57,7 @@ def draw():
             i += 1
 
     if sieve[i]:
-        print("{} ".format(i), end = '')
+        print("{} ".format(i), end='')
         for j in range(i * i, max_num + 1, i):
             if sieve[j]:
                 sieve[j] = False
