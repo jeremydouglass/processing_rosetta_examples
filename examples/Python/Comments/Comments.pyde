@@ -16,8 +16,9 @@ completely ignored by the compiler or interpreter.
 Not strictly a comment, bare
 multi-line strings are used
 in Python as multi-line comments.
-They are also 'doc-strings' when
-made the first element inside 
+They are also used as documentation
+strings or 'docstrings' when
+placed as the first element inside 
 function or class definitions.
 """
  
