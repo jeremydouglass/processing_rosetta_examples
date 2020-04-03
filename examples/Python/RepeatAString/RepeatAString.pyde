@@ -14,9 +14,9 @@ If there is a simpler/more efficient way to repeat a single “character”
 you might want to show that as well (i.e. repeat-char("*", 5) => "*****").
 """
 
-def setup() :
+def setup():
     rep = repeat("ha", 5)
     println(rep)
 
-def repeat(s, times) :
+def repeat(s, times):
     return s * times
