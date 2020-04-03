@@ -11,21 +11,18 @@ completely ignored by the compiler or interpreter.
 """
 
 # a single-line comment
- 
+
 """
-Not strictly a comment, bare
-multi-line strings are used
-in Python as multi-line comments.
-They are also used as documentation
-strings or 'docstrings' when
-placed as the first element inside 
-function or class definitions.
+Not strictly a comment, bare multi-line strings are used
+in Python as multi-line comments. They are also used as
+documentation strings or 'docstrings' when placed as the
+first element inside function or class definitions.
 """
- 
+
 # comment out a code line
 # println("foo")
 
 # comment at the end of a line
-println("foo bar") # "baz"
+println("foo bar")  # "baz"
 
 # there is no way to make an inline comment
