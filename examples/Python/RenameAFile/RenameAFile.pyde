@@ -23,7 +23,7 @@ these root operations should be expected to fail by default.
 
 from java.io import File
 
-def setup() :
+def setup():
     # rename local file
     sketchfile = rename(sketchPath("input.txt"), sketchPath("output.txt"))
     # rename local folder
@@ -36,13 +36,13 @@ def setup() :
     # display results of four operations: True=success, False=fail
     println(str(sketchfile) + ' ' +
             str(sketchfold) + ' ' +
-            str(rootfile) +  ' ' +
-            str(rootfold)) 
+            str(rootfile) + ' ' +
+            str(rootfold))
     # output:
     #     True True False False
 
 
-def rename(oldname, newname) :
+def rename(oldname, newname):
     # File (or directory) with old name
     file = File(oldname)
     # File (or directory) with new name
