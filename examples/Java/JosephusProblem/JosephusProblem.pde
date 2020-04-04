@@ -11,7 +11,7 @@
  * every k-th prisoner and killing him.
  * 
  * As the process goes on, the circle becomes smaller and smaller, until only
- * one prisoner remains, who is then freed. >
+ * one prisoner remains, who is then freed.
  * 
  * For example, if there are 5 prisoners and k=2, the order the prisoners are
  * killed in (let's call it the "killing sequence") will be 1, 3, 0, and 4, and 
