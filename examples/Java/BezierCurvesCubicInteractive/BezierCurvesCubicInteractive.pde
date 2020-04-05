@@ -77,7 +77,7 @@ void mousePressed () {
   }
 }
  
-// hand curser when over dragging over points
+// hand cursor when over dragging over points
 void mouseMoved () {
   cursor(ARROW);
   for (int i =0; i< 4; i++) {
