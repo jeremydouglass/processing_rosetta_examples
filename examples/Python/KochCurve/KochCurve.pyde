@@ -6,7 +6,7 @@ Processing 3.4
 
 Task:
 
-Draw a Koch curve. See details: https:#en.wikipedia.org/wiki/Koch_snowflake
+Draw a Koch curve. See details: https://en.wikipedia.org/wiki/Koch_snowflake
 """
 
 l = 300
