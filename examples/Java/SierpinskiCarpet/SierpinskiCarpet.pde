@@ -4,8 +4,8 @@
  * Processing 3.5
  * 2020-09 Emmanuel Pil
  * 
- * The Sierpiński carpet is a plane fractal first described by Wacław Sierpiński in 1916. The carpet
- * is one generalization of the Cantor set to two dimensions; another is the Cantor dust. 
+ * The Sierpiński carpet is a plane fractal first described by Wacław Sierpiński in 1916. The
+ * carpet is one generalization of the Cantor set to two dimensions; another is the Cantor dust.
  * https://en.wikipedia.org/wiki/Sierpi%C5%84ski_carpet
  * 
  * Task:
