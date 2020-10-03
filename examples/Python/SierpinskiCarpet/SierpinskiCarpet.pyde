@@ -1,7 +1,7 @@
 """
 Skerpinsky Carpet
 http://www.rosettacode.org/wiki/Sierpinski_carpet#Processing
-Processing 3.5Processing 3.4
+Processing 3.5
 2020-10 Alexandre Villares
 
 The Sierpiński carpet is a plane fractal first described by Wacław Sierpiński in 1916. The
