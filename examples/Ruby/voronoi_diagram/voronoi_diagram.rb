@@ -1,39 +1,43 @@
 # frozen_string_literal: true
 
-require_relative 'raster_graphics'
+attr_reader :colors, :positions
 
-class ColourPixel < Pixel
-  def initialize(x, y, colour)
-    @colour = colour
-    super x, y
+def settings
+  size 500, 500
+end
+
+def setup
+  sketch_title 'Voronoi Diagram'
+  load_pixels
+  color_mode(HSB, 360, 1, 1)
+  @colors = generate_colors(30)
+  @positions = generate_positions(30)
+  draw_voronoi
+  update_pixels
+  draw_voronoi_centers
+end
+
+def generate_colors(num)
+  (0..num).map { color(rand(360), 1.0, 1.0) }
+end
+
+def generate_positions(num)
+  (0..num).map { Vec2D.new(rand(width), rand(height)) }
+end
+
+def draw_voronoi
+  grid(width, height) do |x, y|
+    pos = Vec2D.new(x, y)
+    closest = positions.min_by { |posn| posn.dist(pos) }
+    index = positions.index closest
+    pixels[x + y * width] = colors[index]
   end
-  attr_accessor :colour
+end
 
-  def distance_to(px, py)
-    Math.hypot(px - x, py - y)
+def draw_voronoi_centers
+  positions.each do |pos|
+    no_stroke
+    fill 0
+    ellipse(pos.x, pos.y, 4, 4)
   end
 end
-
-width = 300
-height = 200
-npoints = 20
-pixmap = Pixmap.new(width, height)
-
-@bases = npoints.times.collect do |_i|
-  ColourPixel.new(
-    3 + rand(width - 6), 3 + rand(height - 6),  # provide a margin to draw a circle
-    RGBColour.new(rand(256), rand(256), rand(256))
-  )
-end
-
-pixmap.each_pixel do |x, y|
-  nearest = @bases.min_by { |base| base.distance_to(x, y) }
-  pixmap[x, y] = nearest.colour
-end
-
-@bases.each do |base|
-  pixmap[base.x, base.y] = RGBColour::BLACK
-  pixmap.draw_circle(base, 2, RGBColour::BLACK)
-end
-
-pixmap.save_as_png("voronoi_rb.png")
