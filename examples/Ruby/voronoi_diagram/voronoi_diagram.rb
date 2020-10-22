@@ -1,6 +1,12 @@
 # frozen_string_literal: true
 
-attr_reader :colors, :positions
+Tile = Struct.new(:x, :y, :color) do
+  def sq_dist(a, b)
+    (x - a)**2 + (y - b)**2
+  end
+end
+
+attr_reader :tiles
 
 def settings
   size 500, 500
@@ -9,35 +15,29 @@ end
 def setup
   sketch_title 'Voronoi Diagram'
   load_pixels
-  color_mode(HSB, 360, 1, 1)
-  @colors = generate_colors(30)
-  @positions = generate_positions(30)
+  color_mode(HSB, 1.0)
+  @tiles = generate_tiles(30)
   draw_voronoi
   update_pixels
   draw_voronoi_centers
 end
 
-def generate_colors(num)
-  (0..num).map { color(rand(360), 1.0, 1.0) }
-end
-
-def generate_positions(num)
-  (0..num).map { Vec2D.new(rand(width), rand(height)) }
+def generate_tiles(num)
+  (0..num).map { Tile.new(rand(width), rand(height), color(rand, 1.0, 1.0)) }
 end
 
 def draw_voronoi
   grid(width, height) do |x, y|
-    pos = Vec2D.new(x, y)
-    closest = positions.min_by { |posn| posn.dist(pos) }
-    index = positions.index closest
-    pixels[x + y * width] = colors[index]
+    closest = tiles.min_by { |tile| tile.sq_dist(x, y) }
+    pixels[x + y * width] = closest.color
   end
 end
 
 def draw_voronoi_centers
-  positions.each do |pos|
+  tiles.each do |center|
     no_stroke
     fill 0
-    ellipse(pos.x, pos.y, 4, 4)
+    ellipse(center.x, center.y, 4, 4)
   end
 end
+
