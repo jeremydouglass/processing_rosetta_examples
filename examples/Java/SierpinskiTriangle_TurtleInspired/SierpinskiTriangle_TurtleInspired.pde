@@ -2,7 +2,8 @@
  * SierpinskiTriangle -- Turtle inspired
  * http://rosettacode.org/wiki/Sierpinski_triangle/Graphical#Processing
  * Processing 3.5
- * 
+ * 2020-10 Alexandre Villares 
+ *
  * The Sierpiński triangle (sometimes spelled Sierpinski), also called the Sierpiński gasket 
  * or Sierpiński sieve, is a fractal attractive fixed set with the overall shape of an equilateral
  * triangle, subdivided recursively into smaller equilateral triangles.  
