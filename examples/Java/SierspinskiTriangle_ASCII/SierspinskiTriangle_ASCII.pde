@@ -38,7 +38,7 @@ String getSierpinskiTriangle(int n) {
     ns += split[i];
     ns += "\n";
   }
-  return ns.toString();
+  return ns;
 }
 
 String buildSpace(int n) {
